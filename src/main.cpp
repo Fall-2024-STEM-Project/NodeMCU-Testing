@@ -2,13 +2,15 @@
 
 int LEDs = 4;
 
-void setup() { 
+void setup()
+{
   pinMode(LEDs, OUTPUT);
 }
 
-void loop() {
+void loop()
+{
   digitalWrite(LEDs, HIGH);
-  delay(1000);
+  delay(100 + std::rand() % 3000);
   digitalWrite(LEDs, LOW);
-  delay(1000);
+  delay(100 + std::rand() % 3000);
 }
